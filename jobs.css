@@ -1,0 +1,16 @@
+.jobs-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.jobs-row{
+  display: grid;
+  grid-template-columns: 1fr 4fr 3fr 3fr 2fr;
+}
+.jobs-header{
+  background: blue;
+}
+.jobs-entry{
+  background: blueviolet;
+
+}

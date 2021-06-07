@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.ui-container{
+  display: grid;
+  grid-template-areas: 'navbar navbar'
+                        'sidebar mainview';
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 48px auto;
+}
+
+.navbar{
+  grid-area: navbar;
+  background: brown;
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  align-items: center;
+  justify-items: baseline;
+  text-align: center;
+  line-height: 14px;
+}
+.navbar p{
+  font-size: 12px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.sidebar a {
+  padding: 10px 30px;
+}
+
+.main{
+  grid-area: mainview;
+  height: 95vh;
+  background: darkslategray;
+}
